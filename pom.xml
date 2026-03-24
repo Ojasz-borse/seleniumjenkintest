@@ -1,42 +1,31 @@
-<dependency>
-    			<groupId>org.seleniumhq.seleniumgroupId>
-    			<artifactId>selenium-javaartifactId>
-    			<version>3.5.3version>
-    		dependency>
-    		<dependency>
-    			<groupId>junitgroupId>
-    			<artifactId>junitartifactId>
-    			<version>4.11version>
-    			<scope>testscope>
-    		dependency>
-    		
-    		
-    			<plugins>
-    			<plugin>
-    				<groupId>org.apache.maven.pluginsgroupId>
-    				<artifactId>maven-source-pluginartifactId>
-    				<version>3.0.1version>
-    			plugin>
-    			<plugin>
-    				<groupId>org.apache.maven.pluginsgroupId>
-    				<artifactId>maven-compiler-pluginartifactId>
-    				<version>3.5.1version>
-    				<configuration>
-    					<source>1.8source>
-    					<target>1.8target>
-    					<encoding>${project.build.sourceEncoding}encoding>
-    				configuration>
-    			plugin>
-    			<plugin>
-    				<groupId>org.apache.maven.pluginsgroupId>
-    				<artifactId>maven-jar-pluginartifactId>
-    				<version>3.0.2version>
-    				<executions>
-    					<execution>
-    						<goals>
-    							<goal>test-jargoal>
-    						goals>
-    					execution>
-    				executions>
-    			plugin>
-    
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ojas</groupId>
+    <artifactId>selenium-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.18.1</version>
+        </dependency>
+
+        <!-- TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
